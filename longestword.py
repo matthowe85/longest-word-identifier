@@ -24,9 +24,9 @@ for i in x:
         maxwords.append(i)
 
 # Print different results based on if there is only 1 result or multiple results
-if len(maxwords) < 2:
+if len(maxwords) == 1:
     print("This word is the largest word containing " + str(maxnum) + " characters")
-    print(maxwords)
+    print(maxwords[0])
 else:
     print("These words are the largest words, each containing " + str(maxnum) + " characters")
     for i in maxwords:
